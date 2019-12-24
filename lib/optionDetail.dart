@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
 class OptionDetail extends StatefulWidget {
-  final String title;
-  OptionDetail({this.title});
+  final String title, desc, image;
+  OptionDetail({this.title, this.desc, this.image});
   @override
   _OptionDetailState createState() => _OptionDetailState();
 }
@@ -44,10 +44,12 @@ class _OptionDetailState extends State<OptionDetail> {
                 Container(
                   width: double.infinity,
                   height: 300.0,
-                  child: Image.asset(
-                    'assets/images/recipe_inlustration.jpg',
-                    fit: BoxFit.cover,
-                  ),
+                  child: Image.asset(widget.image,
+                  fit: BoxFit.cover),
+                  // child: Image.asset(
+                  //   'assets/images/recipe_inlustration.jpg',
+                  //   fit: BoxFit.cover,
+                  // ),
                 ),
                 Positioned(
                   left: 0.0,
@@ -61,7 +63,7 @@ class _OptionDetailState extends State<OptionDetail> {
                         end: Alignment.topCenter,
                         colors: [
                           Colors.white.withOpacity(0),
-                          Colors.white.withOpacity(1),
+                          Colors.white.withOpacity(0.3),
                         ]
                       )
                     ),
@@ -90,11 +92,12 @@ class _OptionDetailState extends State<OptionDetail> {
                       children: <Widget>[
                         Padding(
                           padding: EdgeInsets.only(
-                            left: 30.0, right: 30.0, top: 30.0),
+                            left: 30.0, right: 10.0, top: 30.0, bottom: 20.0),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: <Widget>[
-                                Column(
+                                Expanded(
+                                  child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: <Widget>[
@@ -106,11 +109,15 @@ class _OptionDetailState extends State<OptionDetail> {
                                     ),
                                     SizedBox(height: 5.0),
                                     Text(
-                                      'Moisture-rich crepe with sweet coconut filling.',
-                                      style: _textStyle.copyWith(fontSize: 16.0),
+                                      // 'Moisture-rich crepe with sweet coconut filling.',
+                                      widget.desc,
+                                      style: _textStyle.copyWith(
+                                        fontSize: 16.0),
                                     )
                                   ],
                                 ),
+                                ),
+                                
                                 // IconButton(
                                 //   onPressed: (){},
                                 //   icon: Icon(

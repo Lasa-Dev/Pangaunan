@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Pangaunan',
       theme: ThemeData(
+        scaffoldBackgroundColor: const Color(0xFFEFEFEF),
         primarySwatch: Colors.blue,
       ),
       home: MyHomePage(),
@@ -42,7 +43,7 @@ List<String> image = [
 
 List<String> title = [
   "Daral",
-  "Panngih Panggih",
+  "Panggih Panggih",
   "Wadjit",
   "Panganan",
   "Panyam",
@@ -52,6 +53,20 @@ List<String> title = [
   "Bawlu",
   "Apam",
   "Pastil",
+];
+
+List<String> desc = [
+  "Moisture-rich crepe with sweet coconut filling.",
+  "Soft and chewy flour rings.",
+  "Purple glutinous rice cooked in pure coconut milk.",
+  "Wayruun pa masi kya nganan sambil pa bhaun.",
+  "Masarap bang bakas ha pag-mawludan.",
+  "Pasung pasung pasung pasuuuuuuung.",
+  "Pitis, pitis bih na kamu pitis mapasu pa.",
+  "Tyabid ampa tyabid sambil nahinang tabid-tabid.",
+  "Bawlu lang po sa umaga.",
+  "Apam da lab por meeeeeeeeeee.",
+  "Pastilan dude.",
 ];
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -92,7 +107,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ClipRRect(
                     borderRadius: BorderRadius.circular(30.0),
                     child: Image(
-                      width: 120.0,
+                      width: 150.0,
                       image: AssetImage('assets/images/pangaunan_logo1.jpg'),
                     ),
                   ),
@@ -106,10 +121,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           'Pangaunan',
                           style: _textStyle.copyWith(fontSize: 30.0, fontWeight: FontWeight.bold),
                         ),
+                        Text(
+                          'Tausug Pastries & Meals',
+                          style: _textStyle.copyWith(fontSize: 25.0),
+                        ),
                         SizedBox(height: 10.0),
                         Text(
-                          '"Mga pagkaun sin bangsa."',
-                          style: _textStyle.copyWith(fontSize: 14.0),
+                          'Zamboanga City, Philippines',
+                          style: _textStyle.copyWith(fontSize: 12.0),
                           )
                       ],
                     ),
@@ -122,40 +141,43 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
-                  Column(
+                  Expanded(
+                    child: Column(
                     children: <Widget>[
-                      Text(
-                        '392k',
-                        style: _textStyle.copyWith(fontSize: 30.0),
-                      ),
-                      Text('Clients', style: _textStyle.copyWith(
-                        fontSize: 14.0, fontWeight: FontWeight.bold),)
+                      // Text(
+                      //   '392k',
+                      //   style: _textStyle.copyWith(fontSize: 30.0),
+                      // ),
+                      Text('To help Muslim community in choosing a right place to eat with their family and friends.', style: _textStyle.copyWith(
+                        fontSize: 16.0),)
                     ],
                   ),
-                  Column(
-                    children: <Widget>[
-                      Text(
-                        '321',
-                        style: _textStyle.copyWith(fontSize: 30.0),
-                      ),
-                      Text('Paid', style: _textStyle.copyWith(
-                        fontSize: 14.0, fontWeight: FontWeight.bold),)
-                    ],
                   ),
-                  Column(
-                    children: <Widget>[
-                      Text(
-                        '40 min',
-                        style: _textStyle.copyWith(fontSize: 30.0),
-                      ),
-                      Text('Paseo del Mar', style: _textStyle.copyWith(
-                        fontSize: 14.0, fontWeight: FontWeight.bold),)
-                    ],
-                  )
+                  
+                  // Column(
+                  //   children: <Widget>[
+                  //     Text(
+                  //       '321',
+                  //       style: _textStyle.copyWith(fontSize: 30.0),
+                  //     ),
+                  //     Text('Paid', style: _textStyle.copyWith(
+                  //       fontSize: 14.0, fontWeight: FontWeight.bold),)
+                  //   ],
+                  // ),
+                  // Column(
+                  //   children: <Widget>[
+                  //     Text(
+                  //       '10-15 min',
+                  //       style: _textStyle.copyWith(fontSize: 30.0),
+                  //     ),
+                  //     Text('Delivery', style: _textStyle.copyWith(
+                  //       fontSize: 14.0, fontWeight: FontWeight.bold),)
+                  //   ],
+                  // )
                 ],
               ),
             ),
-            SizedBox(height: 20.0),
+            // SizedBox(height: 5.0),
             Container(
               width: double.infinity,
               height: MediaQuery.of(context).size.height,
@@ -167,7 +189,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
                 boxShadow: [
                   BoxShadow(
-                    color: Colors.blue[100].withOpacity(0.3),
+                    color: Colors.blue[100].withOpacity(0.5),
                     offset: Offset(0.0, -10.0),
                     blurRadius: 8.0
                   )
@@ -176,20 +198,20 @@ class _MyHomePageState extends State<MyHomePage> {
               child: Column(
                 children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.only(left: 30.0, right: 30.0, top: 30.0),
+                    padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0),
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
                         Text(
-                          'Bang-Bang Sug',
-                          style: _textStyle.copyWith(fontSize: 28.0, fontWeight: FontWeight.bold),
+                          'Bangbang Sug',
+                          style: _textStyle.copyWith(fontSize: 25.0, fontWeight: FontWeight.bold),
                         ),
                         Row(
                           children: <Widget>[
                             Text(
-                              '20',
+                              'Tausug Pastries',
                               style: _textStyle.copyWith(
-                                fontSize: 20.0, fontWeight: FontWeight.bold),
+                                fontSize: 20.0,),
                             ),
                             SizedBox(width: 3.0,),
                             // Text(
@@ -203,6 +225,32 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                   SizedBox(height: 15.0),
                   MenuList(),
+                  Padding(
+                    padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Text(
+                          'Pagkaun Sug',
+                          style: _textStyle.copyWith(fontSize: 25.0, fontWeight: FontWeight.bold),
+                        ),
+                        Row(
+                          children: <Widget>[
+                            Text(
+                              'Tausug Meals',
+                              style: _textStyle.copyWith(
+                                fontSize: 20.0,),
+                            ),
+                            SizedBox(width: 3.0,),
+                            // Text(
+                            //   '06',
+                            //   style: _textStyle.copyWith(fontSize: 20.0),
+                            // )
+                          ],
+                        )
+                      ],
+                    ),
+                  ),
                   Padding(
                     padding: EdgeInsets.only(left: 30.0, right: 30.0, top: 30.0),
                     child: Row(
@@ -319,28 +367,48 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
+class MenuList1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
+  }
+}
+
 class MenuList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Flexible(
       child: Padding(
-        padding: EdgeInsets.only(left: 30.0),
+        padding: EdgeInsets.only(left: 20.0),
         child: Container(
           height: 260.0,
           child: ListView(
             scrollDirection: Axis.horizontal,
             children: <Widget>[
-              MenuOption(title: title[0], image: image[0]),
-              MenuOption(title: title[1], image: image[1]),
-              MenuOption(title: title[2], image: image[2]),
-              MenuOption(title: title[3], image: image[3]),
-              MenuOption(title: title[4], image: image[4]),
-              MenuOption(title: title[5], image: image[5]),
-              MenuOption(title: title[6], image: image[6]),
-              MenuOption(title: title[7], image: image[7]),
-              MenuOption(title: title[8], image: image[8]),
-              MenuOption(title: title[9], image: image[9]),
-              MenuOption(title: title[10], image: image[10]),
+              MenuOption(title: title[0], desc: desc[0], image: image[0]),
+              MenuOption(title: title[1], desc: desc[1], image: image[1]),
+              MenuOption(title: title[2], desc: desc[2], image: image[2]),
+              MenuOption(title: title[3], desc: desc[3], image: image[3]),
+              MenuOption(title: title[4], desc: desc[4], image: image[4]),
+              MenuOption(title: title[5], desc: desc[5], image: image[5]),
+              MenuOption(title: title[6], desc: desc[6], image: image[6]),
+              MenuOption(title: title[7], desc: desc[7], image: image[7]),
+              MenuOption(title: title[8], desc: desc[8], image: image[8]),
+              MenuOption(title: title[9], desc: desc[9], image: image[9]),
+              MenuOption(title: title[10], desc: desc[10], image: image[10]),
+              // MenuOption(title: title[0], image: image[0], desc: desc[0]),
+              // MenuOption(title: title[1], image: image[1], desc: desc[1]),
+              // MenuOption(title: title[2], image: image[2], desc: desc[2]),
+              // MenuOption(title: title[3], image: image[3], desc: desc[3]),
+              // MenuOption(title: title[4], image: image[4], desc: desc[4]),
+              // MenuOption(title: title[5], image: image[5], desc: desc[5]),
+              // MenuOption(title: title[6], image: image[6], desc: desc[6]),
+              // MenuOption(title: title[7], image: image[7], desc: desc[7]),
+              // MenuOption(title: title[8], image: image[8], desc: desc[8]),
+              // MenuOption(title: title[9], image: image[9], desc: desc[9]),
+              // MenuOption(title: title[10], image: image[10], desc: desc[10]),
             ],
           ),
         ),
@@ -350,8 +418,8 @@ class MenuList extends StatelessWidget {
 }
 
 class MenuOption extends StatefulWidget {
-  final String title, image;
-  MenuOption({this.title, this.image});
+  final String title, desc, image;
+  MenuOption({this.title, this.desc, this.image});
   
   @override
   _MenuOptionState createState() => _MenuOptionState();
@@ -363,7 +431,7 @@ class _MenuOptionState extends State<MenuOption> {
     return GestureDetector(
       onTap: () {
         Navigator.of(context).push(
-          MaterialPageRoute(builder: (BuildContext context) => OptionDetail(title: widget.title))
+          MaterialPageRoute(builder: (BuildContext context) => OptionDetail(title: widget.title, desc: widget.desc, image: widget.image,))
         );
       },
           child: Padding(
@@ -373,7 +441,7 @@ class _MenuOptionState extends State<MenuOption> {
           child: Stack(
             children: <Widget>[
               Container(
-                width: 160.0,
+                width: 140.0,
                 height: 240.0,
                 child: Image.asset(widget.image, fit:BoxFit.cover),
               ),
@@ -407,7 +475,7 @@ class _MenuOptionState extends State<MenuOption> {
                       widget.title,
                       style: _textStyle.copyWith(
                         color: Colors.white, 
-                        fontSize: 24.0, 
+                        fontSize: 20.0, 
                         fontWeight: FontWeight.bold),
                     ),
                   ),
