@@ -1,6 +1,7 @@
 # Pangaunan
+<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-A new Flutter project.
+To help Muslim community in choosing a right place to eat with their family and friends.
 
 ## Getting Started
 

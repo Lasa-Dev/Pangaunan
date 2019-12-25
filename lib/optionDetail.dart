@@ -174,7 +174,7 @@ class _OptionDetailState extends State<OptionDetail> {
                                     borderRadius: BorderRadius.circular(30.0),
                                     child: Image(
                                       width: 100.0,
-                                      image: AssetImage('assets/images/massa.jpg'),
+                                      image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
                                     ),
                                   ),
                                   SizedBox(width: 25.0),
@@ -185,14 +185,14 @@ class _OptionDetailState extends State<OptionDetail> {
                                       CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text(
-                                          'Champo',
+                                          'Dennis Coffee Garden',
                                           style: TextStyle(
                                             fontSize: 20.0,
                                             fontWeight: FontWeight.bold),
                                         ),
                                         SizedBox(height: 10.0),
                                         Text(
-                                          'Blanco, Kopiko Black',
+                                          '₱60',
                                           style: _textStyle.copyWith(
                                             fontSize: 16.0),
                                         )
@@ -201,14 +201,14 @@ class _OptionDetailState extends State<OptionDetail> {
                                   )
                                 ],
                               ),
-                              SizedBox(height: 5.0),
+                              SizedBox(height: 25.0),
                               Row(
                                 children: <Widget>[
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(30.0),
                                     child: Image(
                                       width: 100.0,
-                                      image: AssetImage('assets/images/beans.jpg'),
+                                      image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
                                     ),
                                   ),
                                   SizedBox(width: 25.0),
@@ -219,14 +219,14 @@ class _OptionDetailState extends State<OptionDetail> {
                                       CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text(
-                                          'Baguio Beans',
+                                          'Dennis Coffee Garden',
                                           style: TextStyle(
                                             fontSize: 20.0,
                                             fontWeight: FontWeight.bold),
                                         ),
                                         SizedBox(height: 10.0),
                                         Text(
-                                          'Piolesssesssessee',
+                                          '₱60',
                                           style: _textStyle.copyWith(
                                             fontSize: 16.0),
                                         )
@@ -235,14 +235,14 @@ class _OptionDetailState extends State<OptionDetail> {
                                   )
                                 ],
                               ),
-                              SizedBox(height: 5.0),
+                              SizedBox(height: 25.0),
                               Row(
                                 children: <Widget>[
                                   ClipRRect(
                                     borderRadius: BorderRadius.circular(30.0),
                                     child: Image(
                                       width: 100.0,
-                                      image: AssetImage('assets/images/salad.jpg'),
+                                      image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
                                     ),
                                   ),
                                   SizedBox(width: 25.0),
@@ -253,14 +253,14 @@ class _OptionDetailState extends State<OptionDetail> {
                                       CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text(
-                                          'Sagbut',
+                                          'Dennis Coffee Garden',
                                           style: TextStyle(
                                             fontSize: 20.0,
                                             fontWeight: FontWeight.bold),
                                         ),
                                         SizedBox(height: 10.0),
                                         Text(
-                                          'Sagbut ini kinam kamu',
+                                          '₱60',
                                           style: _textStyle.copyWith(
                                             fontSize: 16.0),
                                         )
@@ -269,6 +269,108 @@ class _OptionDetailState extends State<OptionDetail> {
                                   )
                                 ],
                               ),
+                              SizedBox(height: 25.0),
+                              // Row(
+                              //   children: <Widget>[
+                              //     ClipRRect(
+                              //       borderRadius: BorderRadius.circular(30.0),
+                              //       child: Image(
+                              //         width: 100.0,
+                              //         image: AssetImage('assets/images/massa.jpg'),
+                              //       ),
+                              //     ),
+                              //     SizedBox(width: 25.0),
+                              //     Expanded(
+                              //       child: Column(
+                              //         mainAxisSize: MainAxisSize.min,
+                              //         crossAxisAlignment: 
+                              //         CrossAxisAlignment.start,
+                              //         children: <Widget>[
+                              //           Text(
+                              //             'Champo',
+                              //             style: TextStyle(
+                              //               fontSize: 20.0,
+                              //               fontWeight: FontWeight.bold),
+                              //           ),
+                              //           SizedBox(height: 10.0),
+                              //           Text(
+                              //             'Blanco, Kopiko Black',
+                              //             style: _textStyle.copyWith(
+                              //               fontSize: 16.0),
+                              //           )
+                              //         ],
+                              //       ),
+                              //     )
+                              //   ],
+                              // ),
+                              // SizedBox(height: 5.0),
+                              // Row(
+                              //   children: <Widget>[
+                              //     ClipRRect(
+                              //       borderRadius: BorderRadius.circular(30.0),
+                              //       child: Image(
+                              //         width: 100.0,
+                              //         image: AssetImage('assets/images/beans.jpg'),
+                              //       ),
+                              //     ),
+                              //     SizedBox(width: 25.0),
+                              //     Expanded(
+                              //       child: Column(
+                              //         mainAxisSize: MainAxisSize.min,
+                              //         crossAxisAlignment: 
+                              //         CrossAxisAlignment.start,
+                              //         children: <Widget>[
+                              //           Text(
+                              //             'Baguio Beans',
+                              //             style: TextStyle(
+                              //               fontSize: 20.0,
+                              //               fontWeight: FontWeight.bold),
+                              //           ),
+                              //           SizedBox(height: 10.0),
+                              //           Text(
+                              //             'Piolesssesssessee',
+                              //             style: _textStyle.copyWith(
+                              //               fontSize: 16.0),
+                              //           )
+                              //         ],
+                              //       ),
+                              //     )
+                              //   ],
+                              // ),
+                              // SizedBox(height: 5.0),
+                              // Row(
+                              //   children: <Widget>[
+                              //     ClipRRect(
+                              //       borderRadius: BorderRadius.circular(30.0),
+                              //       child: Image(
+                              //         width: 100.0,
+                              //         image: AssetImage('assets/images/salad.jpg'),
+                              //       ),
+                              //     ),
+                              //     SizedBox(width: 25.0),
+                              //     Expanded(
+                              //       child: Column(
+                              //         mainAxisSize: MainAxisSize.min,
+                              //         crossAxisAlignment: 
+                              //         CrossAxisAlignment.start,
+                              //         children: <Widget>[
+                              //           Text(
+                              //             'Sagbut',
+                              //             style: TextStyle(
+                              //               fontSize: 20.0,
+                              //               fontWeight: FontWeight.bold),
+                              //           ),
+                              //           SizedBox(height: 10.0),
+                              //           Text(
+                              //             'Sagbut ini kinam kamu',
+                              //             style: _textStyle.copyWith(
+                              //               fontSize: 16.0),
+                              //           )
+                              //         ],
+                              //       ),
+                              //     )
+                              //   ],
+                              // ),
                               SizedBox(height: 5.0),
                             ],
                           )
