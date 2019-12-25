@@ -1,5 +1,5 @@
 # Pangaunan
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<p align="center"><img src="assets/images/Apam.jpg"></p>
 
 To help Muslim community in choosing a right place to eat with their family and friends.
 
