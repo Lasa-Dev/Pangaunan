@@ -1,7 +1,7 @@
 # Pangaunan
--A Mobile App that fetch all recognized HALAL Resto in Zamboanga City.
+- A Mobile App that fetch all recognized HALAL Resto in Zamboanga City.
 
-# Screenshots
+## Screenshots
 <p align="center">
     <img height="550" src="assets/images/Screenshot_1577245256.png">
     <img height="550" src="assets/images/Screenshot_1577245297.png">
