@@ -1,5 +1,9 @@
 # Pangaunan
-<p align="center"><img height="750" src="assets/images/Screenshot_1577245256.png"></p>
+<p align="center">
+    <img height="550" src="assets/images/Screenshot_1577245256.png">
+    <img height="550" src="assets/images/Screenshot_1577245297.png">
+    <img height="550" src="assets/images/Screenshot_1577245307.png">
+</p>
 
 To help Muslim community in choosing a right place to eat with their family and friends.
 
