@@ -382,7 +382,7 @@ class _OptionDetailState extends State<OptionDetail> {
                             children: <Widget>[
                               Expanded(
                                 child: Text(
-                                  'Padre',
+                                  'Test',
                                   style: _textStyle.copyWith(
                                     fontSize: 24.0,
                                     fontWeight: FontWeight.bold),
@@ -397,7 +397,7 @@ class _OptionDetailState extends State<OptionDetail> {
                                   onPressed: (){},
                                   padding: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
                                   child: Text(
-                                    'Amor con Amor se paga', 
+                                    'Test Button', 
                                   style: _textStyle.copyWith(
                                     fontSize: 22.0, 
                                     fontWeight: FontWeight.bold,
