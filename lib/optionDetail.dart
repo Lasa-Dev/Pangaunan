@@ -18,7 +18,7 @@ class _OptionDetailState extends State<OptionDetail> {
         child: Column(
           children: <Widget>[
             Padding(
-              padding: EdgeInsets.only(left: 12.0, right: 12.0, bottom: 8.0, top: 40.0),
+              padding: EdgeInsets.only(left: 12.0, right: 12.0, bottom: 8.0, top: 30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: <Widget>[
@@ -158,7 +158,7 @@ class _OptionDetailState extends State<OptionDetail> {
                                         ),
                                         SizedBox(height: 10.0),
                                         Text(
-                                          '₱60',
+                                          '₱',
                                           style: _textStyle.copyWith(
                                             fontSize: 16.0),
                                         )
@@ -174,7 +174,7 @@ class _OptionDetailState extends State<OptionDetail> {
                                     borderRadius: BorderRadius.circular(30.0),
                                     child: Image(
                                       width: 100.0,
-                                      image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
+                                      image: AssetImage('assets/images/resto/BayTalMal.jpg'),
                                     ),
                                   ),
                                   SizedBox(width: 25.0),
@@ -185,14 +185,14 @@ class _OptionDetailState extends State<OptionDetail> {
                                       CrossAxisAlignment.start,
                                       children: <Widget>[
                                         Text(
-                                          'Dennis Coffee Garden',
+                                          'Bay Tal Mal',
                                           style: TextStyle(
                                             fontSize: 20.0,
                                             fontWeight: FontWeight.bold),
                                         ),
                                         SizedBox(height: 10.0),
                                         Text(
-                                          '₱60',
+                                          '₱',
                                           style: _textStyle.copyWith(
                                             fontSize: 16.0),
                                         )
@@ -201,74 +201,74 @@ class _OptionDetailState extends State<OptionDetail> {
                                   )
                                 ],
                               ),
-                              SizedBox(height: 25.0),
-                              Row(
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(30.0),
-                                    child: Image(
-                                      width: 100.0,
-                                      image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
-                                    ),
-                                  ),
-                                  SizedBox(width: 25.0),
-                                  Expanded(
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment: 
-                                      CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        Text(
-                                          'Dennis Coffee Garden',
-                                          style: TextStyle(
-                                            fontSize: 20.0,
-                                            fontWeight: FontWeight.bold),
-                                        ),
-                                        SizedBox(height: 10.0),
-                                        Text(
-                                          '₱60',
-                                          style: _textStyle.copyWith(
-                                            fontSize: 16.0),
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
-                              SizedBox(height: 25.0),
-                              Row(
-                                children: <Widget>[
-                                  ClipRRect(
-                                    borderRadius: BorderRadius.circular(30.0),
-                                    child: Image(
-                                      width: 100.0,
-                                      image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
-                                    ),
-                                  ),
-                                  SizedBox(width: 25.0),
-                                  Expanded(
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment: 
-                                      CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        Text(
-                                          'Dennis Coffee Garden',
-                                          style: TextStyle(
-                                            fontSize: 20.0,
-                                            fontWeight: FontWeight.bold),
-                                        ),
-                                        SizedBox(height: 10.0),
-                                        Text(
-                                          '₱60',
-                                          style: _textStyle.copyWith(
-                                            fontSize: 16.0),
-                                        )
-                                      ],
-                                    ),
-                                  )
-                                ],
-                              ),
+                              // SizedBox(height: 25.0),
+                              // Row(
+                              //   children: <Widget>[
+                              //     ClipRRect(
+                              //       borderRadius: BorderRadius.circular(30.0),
+                              //       child: Image(
+                              //         width: 100.0,
+                              //         image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
+                              //       ),
+                              //     ),
+                              //     SizedBox(width: 25.0),
+                              //     Expanded(
+                              //       child: Column(
+                              //         mainAxisSize: MainAxisSize.min,
+                              //         crossAxisAlignment: 
+                              //         CrossAxisAlignment.start,
+                              //         children: <Widget>[
+                              //           Text(
+                              //             'Dennis Coffee Garden',
+                              //             style: TextStyle(
+                              //               fontSize: 20.0,
+                              //               fontWeight: FontWeight.bold),
+                              //           ),
+                              //           SizedBox(height: 10.0),
+                              //           Text(
+                              //             '₱60',
+                              //             style: _textStyle.copyWith(
+                              //               fontSize: 16.0),
+                              //           )
+                              //         ],
+                              //       ),
+                              //     )
+                              //   ],
+                              // ),
+                              // SizedBox(height: 25.0),
+                              // Row(
+                              //   children: <Widget>[
+                              //     ClipRRect(
+                              //       borderRadius: BorderRadius.circular(30.0),
+                              //       child: Image(
+                              //         width: 100.0,
+                              //         image: AssetImage('assets/images/dennis-coffee-garden-logo.png'),
+                              //       ),
+                              //     ),
+                              //     SizedBox(width: 25.0),
+                              //     Expanded(
+                              //       child: Column(
+                              //         mainAxisSize: MainAxisSize.min,
+                              //         crossAxisAlignment: 
+                              //         CrossAxisAlignment.start,
+                              //         children: <Widget>[
+                              //           Text(
+                              //             'Dennis Coffee Garden',
+                              //             style: TextStyle(
+                              //               fontSize: 20.0,
+                              //               fontWeight: FontWeight.bold),
+                              //           ),
+                              //           SizedBox(height: 10.0),
+                              //           Text(
+                              //             '₱60',
+                              //             style: _textStyle.copyWith(
+                              //               fontSize: 16.0),
+                              //           )
+                              //         ],
+                              //       ),
+                              //     )
+                              //   ],
+                              // ),
                               SizedBox(height: 25.0),
                               // Row(
                               //   children: <Widget>[

@@ -48,7 +48,8 @@ List<String> image = [
   "assets/images/Junay.jpg",
   "assets/images/Syanlag.jpg",
   "assets/images/Pyuto.jpg",
-  "assets/images/Agar-Agar.jpg",
+  "assets/images/Agar-Agar.png",
+  "assets/images/mee_gors.jpg",
 ];
 
 List<String> title = [
@@ -70,6 +71,7 @@ List<String> title = [
   "Syanlag",
   "Pyuto",
   "Agar-Agar",
+  "Mee Goreng",
 ];
 
 List<String> desc = [
@@ -91,6 +93,7 @@ List<String> desc = [
   "Syanlag",
   "Pyuto",
   "Agar-Agar",
+  "Mee Gorsssssssssssss",
 ];
 
 class _MyHomePageState extends State<MyHomePage> {
@@ -108,7 +111,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         actions: <Widget>[
           IconButton(
-            icon: Icon(Icons.add),
+            icon: Icon(Icons.location_on),
             color: Colors.blue[300],
             iconSize: 30.0,
             onPressed: () {
@@ -119,8 +122,8 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
           IconButton(
-            icon: Icon(Icons.add),
-            color: Colors.blue[300],
+            icon: Icon(Icons.favorite),
+            color: Colors.red[300],
             iconSize: 30.0,
             onPressed: () {},
           ),
@@ -209,12 +212,15 @@ class _MyHomePageState extends State<MyHomePage> {
             // SizedBox(height: 5.0),
             Container(
               width: double.infinity,
+              margin: EdgeInsets.only(bottom: 20.0),
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40.0),
                   topRight: Radius.circular(40.0),
+                  bottomLeft: Radius.circular(40.0),
+                  bottomRight: Radius.circular(40.0),
                 ),
                 boxShadow: [
                   BoxShadow(
@@ -287,7 +293,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       //   '392k',
                       //   style: _textStyle.copyWith(fontSize: 30.0),
                       // ),
-                      Text('Also know as the Bangbang Sug is usually served with coffee. Most of the food are made with coconut as the main ingredient.', style: _textStyle.copyWith(
+                      Text('Also known as the Bangbang Sug is usually served with coffee. Most of the food are made with coconut as the main ingredient.', style: _textStyle.copyWith(
                         fontSize: 16.0, fontStyle: FontStyle.italic),)
                        ],
                         ),
@@ -301,11 +307,14 @@ class _MyHomePageState extends State<MyHomePage> {
             Container(
               width: double.infinity,
               height: MediaQuery.of(context).size.height,
+              margin: EdgeInsets.only(bottom: 20.0),
               decoration: BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(40.0),
                   topRight: Radius.circular(40.0),
+                  bottomLeft: Radius.circular(40.0),
+                  bottomRight: Radius.circular(40.0),
                 ),
                 boxShadow: [
                   BoxShadow(
@@ -371,77 +380,171 @@ class _MyHomePageState extends State<MyHomePage> {
                       ],
                     ),
                   ),
+                  // Padding(
+                  //   padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+                  //   child: Row(
+                  //     children: <Widget>[
+                  //       ClipRRect(
+                  //         borderRadius: BorderRadius.circular(30.0),
+                  //         child: Image(
+                  //           width: 100.0,
+                  //           image: AssetImage('assets/images/user_profile.png'),
+                  //         ),
+                  //       ),
+                  //       SizedBox(width: 20.0),
+                  //       Expanded(
+                  //         child: Column(
+                  //           mainAxisSize: MainAxisSize.min,
+                  //           crossAxisAlignment: CrossAxisAlignment.start,
+                  //           children: <Widget>[
+                  //             Text(
+                  //               'Test',
+                  //               style: _textStyle.copyWith(
+                  //                 fontSize: 20.0,
+                  //                 fontWeight: FontWeight.bold
+                  //               ),
+                  //             ),
+                  //             Row(
+                  //               children: <Widget>[
+                  //                 IconButton(
+                  //                   onPressed: (){},
+                  //                   icon: Icon(
+                  //                     Icons.star,
+                  //                     color: Colors.yellow[600],
+                  //                     size: 32.0,
+                  //                   ),
+                  //                 ),
+                  //                 IconButton(
+                  //                   onPressed: (){},
+                  //                   icon: Icon(
+                  //                     Icons.star,
+                  //                     color: Colors.yellow[600],
+                  //                     size: 32.0,
+                  //                   ),
+                  //                 ),
+                  //                 IconButton(
+                  //                   onPressed: (){},
+                  //                   icon: Icon(
+                  //                     Icons.star,
+                  //                     color: Colors.yellow[600],
+                  //                     size: 32.0,
+                  //                   ),
+                  //                 ),
+                  //                 IconButton(
+                  //                   onPressed: (){},
+                  //                   icon: Icon(
+                  //                     Icons.star,
+                  //                     color: Colors.yellow[600],
+                  //                     size: 32.0,
+                  //                   ),
+                  //                 ),
+                  //                 IconButton(
+                  //                   onPressed: (){},
+                  //                   icon: Icon(
+                  //                     Icons.star,
+                  //                     color: Colors.black45,
+                  //                     size: 32.0,
+                  //                   ),
+                  //                 ),
+                  //               ],
+                  //             )
+                  //           ],
+                  //         ),
+                  //       )
+                  //     ],
+                  //   ),
+                  // )
+                ],
+              ),
+            ),
+            Container(
+              width: double.infinity,
+              margin: EdgeInsets.only(bottom: 20.0),
+              height: MediaQuery.of(context).size.height,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(40.0),
+                  topRight: Radius.circular(40.0),
+                  bottomLeft: Radius.circular(40.0),
+                  bottomRight: Radius.circular(40.0),
+                ),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.blue[100].withOpacity(0.5),
+                    offset: Offset(0.0, -10.0),
+                    blurRadius: 8.0
+                  )
+                ]
+              ),
+              child: Column(
+                children: <Widget>[
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 25.0, vertical: 25.0),
+                    padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0),
                     child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: <Widget>[
-                        ClipRRect(
-                          borderRadius: BorderRadius.circular(30.0),
-                          child: Image(
-                            width: 100.0,
-                            image: AssetImage('assets/images/user_profile.png'),
-                          ),
+                        Text(
+                          'Featured Food',
+                          style: _textStyle.copyWith(fontSize: 25.0, fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(width: 20.0),
+                        // Row(
+                        //   children: <Widget>[
+                        //     Text(
+                        //       'Tausug Pastries',
+                        //       style: _textStyle.copyWith(
+                        //         fontSize: 20.0,),
+                        //     ),
+                        //     SizedBox(width: 3.0,),
+                        //     // Text(
+                        //     //   '06',
+                        //     //   style: _textStyle.copyWith(fontSize: 20.0),
+                        //     // )
+                        //   ],
+                        // )
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 15.0),
+                  MenuList2(),
+                  Padding(
+                    padding: EdgeInsets.only(left: 20.0, right: 20.0, top: 30.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
+                        Text(
+                          'Tausug Pastries',
+                          style: _textStyle.copyWith(fontSize: 20.0, fontWeight: FontWeight.bold),
+                        ),
+                        // Row(
+                        //   children: <Widget>[
+                        //     Text(
+                        //       'Tausug Meals',
+                        //       style: _textStyle.copyWith(
+                        //         fontSize: 20.0,),
+                        //     ),
+                        //   ],
+                        // )
+                      ],
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 30.0, right: 30.0, top: 30.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: <Widget>[
                         Expanded(
                           child: Column(
-                            mainAxisSize: MainAxisSize.min,
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: <Widget>[
-                              Text(
-                                'Test',
-                                style: _textStyle.copyWith(
-                                  fontSize: 20.0,
-                                  fontWeight: FontWeight.bold
-                                ),
-                              ),
-                              Row(
-                                children: <Widget>[
-                                  IconButton(
-                                    onPressed: (){},
-                                    icon: Icon(
-                                      Icons.star,
-                                      color: Colors.yellow[600],
-                                      size: 32.0,
-                                    ),
-                                  ),
-                                  IconButton(
-                                    onPressed: (){},
-                                    icon: Icon(
-                                      Icons.star,
-                                      color: Colors.yellow[600],
-                                      size: 32.0,
-                                    ),
-                                  ),
-                                  IconButton(
-                                    onPressed: (){},
-                                    icon: Icon(
-                                      Icons.star,
-                                      color: Colors.yellow[600],
-                                      size: 32.0,
-                                    ),
-                                  ),
-                                  IconButton(
-                                    onPressed: (){},
-                                    icon: Icon(
-                                      Icons.star,
-                                      color: Colors.yellow[600],
-                                      size: 32.0,
-                                    ),
-                                  ),
-                                  IconButton(
-                                    onPressed: (){},
-                                    icon: Icon(
-                                      Icons.star,
-                                      color: Colors.black45,
-                                      size: 32.0,
-                                    ),
-                                  ),
-                                ],
-                              )
-                            ],
-                          ),
-                        )
+                    children: <Widget>[
+                      // Text(
+                      //   '392k',
+                      //   style: _textStyle.copyWith(fontSize: 30.0),
+                      // ),
+                      Text('Also known as the Bangbang Sug is usually served with coffee. Most of the food are made with coconut as the main ingredient.', style: _textStyle.copyWith(
+                        fontSize: 16.0, fontStyle: FontStyle.italic),)
+                       ],
+                        ),
+                        ),
                       ],
                     ),
                   )
@@ -532,22 +635,22 @@ class SecondRoute extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
-                  "https://lh5.googleusercontent.com/p/AF1QipO3VPL9m-b355xWeg4MXmOQTauFAEkavSluTtJU=w225-h160-k-no",
-                  6.9161971, 122.0594878,"Dennis Coffee Garden"),
+                  "https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/38600829_2367211943289274_8466566664354267136_n.png?_nc_cat=103&_nc_ohc=qwDSvj5JhWkAQmXVSX7XHhIb1pBKw5WzpGC-vsmPJwemcYfOgxjKIhFbA&_nc_ht=scontent.fcgy1-1.fna&oh=0f70e1c3c73bff99b52854d652ca72d3&oe=5E69A509",
+                  6.9162989, 122.0595192,"Dennis Coffee Garden", 'Open \u00B7 Closed \n 9AM \u00B7 11PM'),
             ),
             SizedBox(width: 10.0),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
-                  "https://lh5.googleusercontent.com/p/AF1QipMKRN-1zTYMUVPrH-CcKzfTo6Nai7wdL7D8PMkt=w340-h160-k-no",
-                  6.916016, 122.0600913,"Petrol Gas Station"),
+                  "https://scontent.fcgy1-1.fna.fbcdn.net/v/t1.0-9/p960x960/43660201_1120636234768052_5027763371819139072_o.jpg?_nc_cat=111&_nc_ohc=0i54_8CxHBYAQkqA3YaYDC8s_NN8RLeJCVXMQYRmg_6dyks38Zpb_UqFg&_nc_ht=scontent.fcgy1-1.fna&oh=ce69f32c1673e2ab2c21f3245ab392f5&oe=5EAC599E",
+                  6.9194226, 122.0720087,"Bay Tal Mal", 'Open \u00B7 Closed \n 9AM \u00B7 11PM'),
             ),
             SizedBox(width: 10.0),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: _boxes(
                   "https://images.unsplash.com/photo-1504940892017-d23b9053d5d4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60",
-                  6.9161661, 122.0598686,"Blue Hill"),
+                  6.9161661, 122.0598686,"Blue Hill", 'Close \u00B7 Opens 17:00 Thu'),
             ),
           ],
         ),
@@ -555,7 +658,7 @@ class SecondRoute extends StatelessWidget {
     );
   }
 
-  Widget _boxes(String _image, double lat,double long,String restaurantName) {
+  Widget _boxes(String _image, double lat,double long,String restaurantName,String schedule) {
     return  GestureDetector(
         onTap: () {
           _gotoLocation(lat,long);
@@ -583,7 +686,7 @@ class SecondRoute extends StatelessWidget {
                           Container(
                           child: Padding(
                             padding: const EdgeInsets.all(8.0),
-                            child: myDetailsContainer1(restaurantName),
+                            child: myDetailsContainer1(restaurantName, schedule),
                           ),
                         ),
 
@@ -594,7 +697,7 @@ class SecondRoute extends StatelessWidget {
     );
   }
 
-  Widget myDetailsContainer1(String restaurantName) {
+  Widget myDetailsContainer1(String restaurantName, schedule) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: <Widget>[
@@ -609,76 +712,76 @@ class SecondRoute extends StatelessWidget {
           )),
         ),
         SizedBox(height:5.0),
-        Container(
-              child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: <Widget>[
-              Container(
-                  child: Text(
-                "4.1",
-                style: TextStyle(
-                  color: Colors.black54,
-                  fontSize: 18.0,
-                ),
-              )),
-              Container(
-                child: Icon(
-                  FontAwesomeIcons.solidStar,
-                  color: Colors.amber,
-                  size: 15.0,
-                ),
-              ),
-              Container(
-                child: Icon(
-                  FontAwesomeIcons.solidStar,
-                  color: Colors.amber,
-                  size: 15.0,
-                ),
-              ),
-              Container(
-                child: Icon(
-                  FontAwesomeIcons.solidStar,
-                  color: Colors.amber,
-                  size: 15.0,
-                ),
-              ),
-              Container(
-                child: Icon(
-                  FontAwesomeIcons.solidStar,
-                  color: Colors.amber,
-                  size: 15.0,
-                ),
-              ),
-              Container(
-                child: Icon(
-                  FontAwesomeIcons.solidStarHalf,
-                  color: Colors.amber,
-                  size: 15.0,
-                ),
-              ),
-               Container(
-                  child: Text(
-                "(946)",
-                style: TextStyle(
-                  color: Colors.black54,
-                  fontSize: 18.0,
-                ),
-              )),
-            ],
-          )),
-          SizedBox(height:5.0),
-        Container(
-                  child: Text(
-                "American \u00B7 \u0024\u0024 \u00B7 1.6 mi",
-                style: TextStyle(
-                  color: Colors.black54,
-                  fontSize: 18.0,
-                ),
-              )),
-              SizedBox(height:5.0),
+        // Container(
+        //       child: Row(
+        //     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        //     children: <Widget>[
+        //       Container(
+        //           child: Text(
+        //         "4.1",
+        //         style: TextStyle(
+        //           color: Colors.black54,
+        //           fontSize: 18.0,
+        //         ),
+        //       )),
+        //       Container(
+        //         child: Icon(
+        //           FontAwesomeIcons.solidStar,
+        //           color: Colors.amber,
+        //           size: 15.0,
+        //         ),
+        //       ),
+        //       Container(
+        //         child: Icon(
+        //           FontAwesomeIcons.solidStar,
+        //           color: Colors.amber,
+        //           size: 15.0,
+        //         ),
+        //       ),
+        //       Container(
+        //         child: Icon(
+        //           FontAwesomeIcons.solidStar,
+        //           color: Colors.amber,
+        //           size: 15.0,
+        //         ),
+        //       ),
+        //       Container(
+        //         child: Icon(
+        //           FontAwesomeIcons.solidStar,
+        //           color: Colors.amber,
+        //           size: 15.0,
+        //         ),
+        //       ),
+        //       Container(
+        //         child: Icon(
+        //           FontAwesomeIcons.solidStarHalf,
+        //           color: Colors.amber,
+        //           size: 15.0,
+        //         ),
+        //       ),
+        //        Container(
+        //           child: Text(
+        //         "(946)",
+        //         style: TextStyle(
+        //           color: Colors.black54,
+        //           fontSize: 18.0,
+        //         ),
+        //       )),
+        //     ],
+        //   )),
+        //   SizedBox(height:5.0),
+        // Container(
+        //           child: Text(
+        //         "American \u00B7 \u0024\u0024 \u00B7 1.6 mi",
+        //         style: TextStyle(
+        //           color: Colors.black54,
+        //           fontSize: 18.0,
+        //         ),
+        //       )),
+        //       SizedBox(height:5.0),
         Container(
             child: Text(
-          "Closed \u00B7 Opens 17:00 Thu",
+          schedule,
           style: TextStyle(
               color: Colors.black54,
               fontSize: 18.0,
@@ -714,17 +817,17 @@ class SecondRoute extends StatelessWidget {
 
 Marker gramercyMarker = Marker(
   markerId: MarkerId('gramercy'),
-  position: LatLng(6.9161971, 122.0594878),
+  position: LatLng(6.9162989, 122.0595192),
   infoWindow: InfoWindow(title: 'Dennis Coffee Garden'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
-    BitmapDescriptor.hueViolet,
+    BitmapDescriptor.hueBlue,
   ),
 );
 
 Marker bernardinMarker = Marker(
   markerId: MarkerId('bernardin'),
-  position: LatLng(6.916016, 122.0600913),
-  infoWindow: InfoWindow(title: 'petrol'),
+  position: LatLng(6.9194226, 122.0720087),
+  infoWindow: InfoWindow(title: 'Bay Tal Mal'),
   icon: BitmapDescriptor.defaultMarkerWithHue(
     BitmapDescriptor.hueViolet,
   ),
@@ -765,7 +868,7 @@ Marker newyork3Marker = Marker(
   ),
 );
 
-class MenuList1 extends StatelessWidget {
+class MenuList2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Flexible(
@@ -777,6 +880,26 @@ class MenuList1 extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             children: <Widget>[
               MenuOption(title: title[11], desc: desc[11], image: image[11]),
+              MenuOption(title: title[18], desc: desc[18], image: image[18]),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class MenuList1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Flexible(
+      child: Padding(
+        padding: EdgeInsets.only(left: 20.0),
+        child: Container(
+          height: 260.0,
+          child: ListView(
+            scrollDirection: Axis.horizontal,
+            children: <Widget>[
               MenuOption(title: title[12], desc: desc[12], image: image[12]),
               MenuOption(title: title[13], desc: desc[13], image: image[13]),
               MenuOption(title: title[14], desc: desc[14], image: image[14]),

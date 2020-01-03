@@ -47,6 +47,7 @@ flutter:
     - assets/images/user_profile.png
     - assets/images/recipe_inlustration.jpg
     - assets/images/dennis-coffee-garden-logo.png
+    - assets/images/resto/BayTalMal.jpg
     - assets/images/pangaunan_logo1.jpg
     - assets/images/Dennis-Coffee-Garden-Daral.jpg
     - assets/images/Dennis-Coffee-Garden-Panggih-Panggih.jpg
@@ -70,6 +71,7 @@ flutter:
     - assets/images/Syanlag.jpg
     - assets/images/Pyuto.jpg
     - assets/images/Agar-Agar.png
+    - assets/images/mee_gors.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:
